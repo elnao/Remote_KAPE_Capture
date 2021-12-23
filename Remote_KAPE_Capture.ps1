@@ -6,7 +6,10 @@
 #                  Run from C:\elnao\Memory_Capture folder; Kape.zip (zipped kape files) 
 #                  must be staged on the remote machine at C:\program files\elnao-files
 ###############################################################################################
- 
+
+# Speed up Copy-Item operations
+$ProgressPreference = "SilentlyContinue"
+
 # Create Timestamp and remote powershell session.
 $KAPECaptureStartDate = (Get-Date -Format FileDateTimeUniversal)
 
